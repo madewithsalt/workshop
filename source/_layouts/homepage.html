@@ -1,0 +1,22 @@
+---
+layout: default
+body_id: homepage
+---
+
+<div class="homepage">
+  <header>
+    <h1>
+      <span class="smaller">Programming</span>
+      <span class="larger">Workshop</span>
+    </h1>
+    <p class="sub-head">Bite-sized exercises you can do 
+    in 2-6 hours, designed to help you master HTML, CSS, or JavaScript.
+  </p>
+  </header>
+  <section class="levels-list">
+    {% for level in site.levels %}
+      {% include custom/label-vert.html level=level size="large" %}
+    {% endfor %}
+  </section>
+
+</div>

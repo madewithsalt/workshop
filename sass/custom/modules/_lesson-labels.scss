@@ -1,0 +1,99 @@
+$lesson-1: #81CC35;
+$lesson-2: #D666ED;
+$lesson-3: #F5A623;
+$lesson-4: #4A90E2;
+
+@function getColor($id) {
+  @if $id == 1 {
+    @return $lesson-1;
+  }
+
+  @if $id == 2 {
+    @return $lesson-2;
+  }
+
+  @if $id == 3 {
+    @return $lesson-3;
+  }
+
+  @if $id == 4 {
+    @return $lesson-4;
+  }
+}
+
+.lesson-label {
+  font-family: $sans;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  @include transition(all 0.3s ease-in);
+
+  &.vertical-label {
+    text-align: center;
+    @include box-sizing('border-box');
+
+    &.large {
+      border-radius: 8px;
+      width: 150px;
+      height: 200px;      
+      padding: 10px;
+    }
+
+    $i: 4;
+    @while $i > 0 {
+      $color: getColor($i);
+      $hover-color: darken($color, 15);
+
+      &.lesson-#{$i} { 
+        background-color: $color;
+
+        .label-icon {
+          .lesson-id {
+            color: $color;
+          }
+        }
+
+        &:hover {
+          background-color: $hover-color;
+
+          .label-icon .lesson-id {
+            color: $hover-color;
+          }
+        }
+      }
+      $i: $i - 1;
+    }
+
+    &:hover {
+      .label-icon {
+        .fa {
+          @include text-shadow(0 2px 3px rgba(0,0,0,0.2));
+        }
+      }
+    }
+
+  }
+
+  .label-icon {
+    text-align: center;
+    height: 140px;
+
+    .fa {
+      color: #fff;
+      font-size: 130px;
+    }
+
+    .lesson-id {
+      font-size: 50px;
+      display: block;
+      margin-top: -80px;
+      @include extra-bold;
+    }
+  }
+
+  .label-name {
+    color: #fff;
+    text-transform: uppercase; 
+  }
+
+}

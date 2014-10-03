@@ -5,12 +5,46 @@
 @import "pages/**/*";
 
 body>nav, body>footer, html  {
-  background: none;
   background-color: transparent;
+  background: $main-bg $noise-bg;
   border: none;
 }
 
 #main {
   border: none;
   padding: 20px;
+}
+
+header .main-header, .homepage > header {
+  color: $header-bg;
+  font-family: $sans;
+
+  h1 {
+    font-family: $sans;
+    display: inline-block;
+    width: 50%;
+
+    span {
+    display: block;
+    }
+  }
+
+  .smaller {
+    @include light;
+    text-transform: uppercase;
+    font-size: 80%;
+  }
+
+  .larger {
+    @include extra-bold;
+    font-size: 175%;
+    line-height: 50%;
+  }
+
+  .sub-head {
+    display: inline-block;
+    width: 40%;
+    @include light;
+    font-size: 150%;
+  }
 }

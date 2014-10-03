@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://workshop.theresnobox.net
+title: Programming Workshop
+subtitle: "Bite-sized HTML, CSS, and JavaScript exercises."
+author: Kristi Centinaro
 simple_search: https://www.google.com/search
-description:
+description: "Bite-sized exercises you can do in 2-6 hours, designed to help you master HTML, CSS, or JavaScript."
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -86,7 +86,7 @@ github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: "@thersnobox"
 twitter_tweet_button: true
 
 # Google +1

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://yoursite.com/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2014-09-22T16:43:30-04:00</updated>
-  <id>http://yoursite.com/</id>
+  <title><![CDATA[Programming Workshop]]></title>
+  <link href="http://workshop.theresnobox.net/atom.xml" rel="self"/>
+  <link href="http://workshop.theresnobox.net/"/>
+  <updated>2014-10-01T16:58:08-04:00</updated>
+  <id>http://workshop.theresnobox.net/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Kristi Centinaro]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[HTML Basics]]></title>
-    <link href="http://yoursite.com/blog/2014/09/22/html-basics/"/>
+    <link href="http://workshop.theresnobox.net/blog/2014/09/22/html-basics/"/>
     <updated>2014-09-22T16:39:16-04:00</updated>
-    <id>http://yoursite.com/blog/2014/09/22/html-basics</id>
+    <id>http://workshop.theresnobox.net/blog/2014/09/22/html-basics</id>
     <content type="html"><![CDATA[<p>Testing Categories!</p>
 ]]></content>
   </entry>

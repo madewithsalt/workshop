@@ -3,7 +3,7 @@
   
   
   <url>
-    <loc>http://yoursite.com/blog/2014/09/22/html-basics/</loc>
+    <loc>http://workshop.theresnobox.net/blog/2014/09/22/html-basics/</loc>
     
     <lastmod>2014-09-22T16:39:16-04:00</lastmod>
     
@@ -12,22 +12,22 @@
   
   
   <url>
-    <loc>http://yoursite.com/blog/archives/</loc>
-    <lastmod>2014-09-22T16:43:30-04:00</lastmod>
+    <loc>http://workshop.theresnobox.net/blog/archives/</loc>
+    <lastmod>2014-10-01T16:58:08-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/blog/</loc>
-    <lastmod>2014-09-22T16:43:30-04:00</lastmod>
+    <loc>http://workshop.theresnobox.net/blog/</loc>
+    <lastmod>2014-10-01T16:58:08-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/</loc>
-    <lastmod>2014-09-22T16:43:30-04:00</lastmod>
+    <loc>http://workshop.theresnobox.net/</loc>
+    <lastmod>2014-10-01T16:58:08-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>

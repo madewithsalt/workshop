@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Beginner Js | Programming Workshop]]></title>
+  <link href="http://workshop.theresnobox.net/blog/categories/beginner-js/atom.xml" rel="self"/>
+  <link href="http://workshop.theresnobox.net/"/>
+  <updated>2014-10-04T16:57:54-04:00</updated>
+  <id>http://workshop.theresnobox.net/</id>
+  <author>
+    <name><![CDATA[Kristi Centinaro]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Word Guesser]]></title>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/word-guesser/"/>
+    <updated>2014-10-04T16:39:20-04:00</updated>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/word-guesser</id>
+    <content type="html"><![CDATA[<h1>The Word Guesser</h1>
+
+<p>You&rsquo;ll create a simple word guessing game where the user gets infinite tries to guess the word (like Hangman without the hangman, or like Wheel of Fortune without the wheel and fortune).</p>
+
+<ul>
+<li>Create two global arrays: one to hold the letters of the word (e.g. <code>'F', 'O', 'X'</code>), and one to hold the current guessed letters (e.g. it would start with <code>'_', '_', '_'</code> and end with <code>'F', 'O', 'X'</code>).</li>
+<li>Write a function called <code>guessLetter</code> that will:
+
+<ul>
+<li>Take one argument, the guessed letter.</li>
+<li>Iterate through the word letters and see if the guessed letter is in there.</li>
+<li>If the guessed letter matches a word letter, changed the guessed letters array to reflect that.</li>
+<li>When it&rsquo;s done iterating, it should log the current guessed letters (<code>'F__'</code>) and congratulate the user if they found a new letter.</li>
+<li>It should also figure out if there are any more letters that need to be guessed, and if not, it should congratulate the user for winning the game.</li>
+</ul>
+</li>
+<li>Pretend you don&rsquo;t know the word, and call <code>guessLetter</code> multiple times with various letters to check that your program works.</li>
+</ul>
+
+
+<p><strong>Bonus:</strong> Make it more like Wheel of Fortune:
+- Start with a reward amount of $0
+- Every time a letter is guessed, generate a random amount and reward the user if they found a letter (multiplying the reward if multiple letters found), otherwise subtract from their reward.
+- When they guess the word, log their final reward amount.</p>
+
+<p><strong>Bonus:</strong> Make it like Hangman:
+- Keep track of all the guessed letters (right and wrong) and only let the user guess a letter once. If they guess a letter twice, do nothing.
+- Keep track of the state of the hangman as a number (starting at 0), and subtract or add to that number every time they make a wrong guess.
+Once the number reaches 6 (a reasonable number of body parts for a hangman), inform the user that they lost and show a hangman on the log.</p>
+
+<h3><a href="/files/beg_js/wordguess_solution.js">See Solution</a></h3>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cat Walk]]></title>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/cat-walk/"/>
+    <updated>2014-10-04T16:35:29-04:00</updated>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/cat-walk</id>
+    <content type="html"><![CDATA[<h1>Cat Walk</h1>
+
+<p>The goal of this exercise to make an awesome interactive animated cat.</p>
+
+<p>You may find <a href="http://www.teaching-materials.org/javascript/slides/animevents.html">these slides</a> helpful.</p>
+
+<p>Start with this webpage, which has an img of a cat walking, and JavaScript functions that animate the cat across the screen. (For all of these, you shouldn&rsquo;t need to touch the original code - just add code below.)</p>
+
+<p><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;!DOCTYPE html>
+</span><span class='line'>  &lt;html>
+</span><span class='line'>   &lt;head>
+</span><span class='line'>    &lt;meta charset="utf-8" />
+</span><span class='line'>    &lt;title>Cat Walk&lt;/title>
+</span><span class='line'>   &lt;/head>
+</span><span class='line'>   &lt;body>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>&lt;button id="start-button"&gt;Start&lt;/button&gt;
+</span><span class='line'>&lt;button id="speed-button"&gt;Go Faster!&lt;/button&gt;
+</span><span class='line'>&lt;button id="stop-button"&gt;Stop&lt;/button&gt;
+</span><span class='line'>&lt;div id="info"&gt;&lt;/div&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;img style="position:absolute; left: 0px; top: 80px;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif"&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;script&gt;
+</span><span class='line'>  var movePixels = 10;
+</span><span class='line'>  var delayMs = 50;
+</span><span class='line'>  var catTimer = null;
+</span><span class='line'>  function catWalk() {
+</span><span class='line'>    var img = document.getElementsByTagName('img')[0];
+</span><span class='line'>    var currentLeft = parseInt(img.style.left);
+</span><span class='line'>    img.style.left = (currentLeft + movePixels) + 'px';
+</span><span class='line'>    if (currentLeft &gt; (window.innerWidth-img.width)) {
+</span><span class='line'>      img.style.left = '0px';
+</span><span class='line'>    }
+</span><span class='line'>  }
+</span><span class='line'>  function startCatWalk() {
+</span><span class='line'>    catTimer = window.setInterval(catWalk, delayMs);
+</span><span class='line'>  }
+</span><span class='line'>&lt;/script&gt;
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>   &lt;/body>
+</span><span class='line'>  &lt;/html></span></code></pre></td></tr></table></div></figure></p>
+
+<ul>
+<li>Add an event listener to the start button, so that the cat starts moving across the screen when its clicked.</li>
+<li>Add an event listener to the stop button, so that the cat stops moving when clicked.</li>
+<li>Add an event listener to the speed button, so that the cat moves faster when it&rsquo;s clicked.</li>
+<li><strong>Bonus:</strong> Disable the start/stop/faster buttons at the appropriate times (e.g. the user shouldn&rsquo;t be able to click &ldquo;stop&rdquo; if the cat isn&rsquo;t currently moving.)</li>
+</ul>
+
+
+<h3><a href="/files/beg_js/catwalk_solution.js">See Solutions</a></h3>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mad Libs]]></title>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/mad-libs/"/>
+    <updated>2014-10-04T16:29:44-04:00</updated>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/mad-libs</id>
+    <content type="html"><![CDATA[<p>The goal of this exercise is to make a Mad Libs generator.</p>
+
+<p>The second half of <a href="http://www.teaching-materials.org/javascript/slides/animevents.html">these slides</a> may be useful.</p>
+
+<p>Start with this webpage, which has several input elements and a button:
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;!DOCTYPE html>
+</span><span class='line'>  &lt;html>
+</span><span class='line'>  &lt;head>
+</span><span class='line'>    &lt;meta charset="utf-8" />
+</span><span class='line'>    &lt;title>&lt;/title>
+</span><span class='line'>  &lt;/head>
+</span><span class='line'>  &lt;body>
+</span><span class='line'>    &lt;h1>Mad Libs&lt;/h1>
+</span><span class='line'>    &lt;ul>
+</span><span class='line'>      &lt;li>Noun: &lt;input type="text" id="noun">
+</span><span class='line'>      &lt;li>Adjective: &lt;input type="text" id="adjective">
+</span><span class='line'>      &lt;li>Someone&rsquo;s Name: &lt;input type="text" id="name">
+</span><span class='line'>    &lt;/ul>
+</span><span class='line'>    &lt;button id="lib-button">Lib it!&lt;/button>
+</span><span class='line'>    &lt;div id="story">&lt;/div>
+</span><span class='line'>  &lt;/body>
+</span><span class='line'>  &lt;/html></span></code></pre></td></tr></table></div></figure></p>
+
+<ul>
+<li>Add a script tag to the bottom of the page for your code.</li>
+<li>Add an event listener to the button so that it calls a <code>makeMadLib</code> function when clicked.</li>
+<li>In the <code>makeMadLib</code> function, retrieve the current values of the form input elements, make a story from them, and output that in the story div (like &ldquo;Pamela really likes pink cucumbers.&rdquo;)</li>
+</ul>
+
+
+<h3><a href="/files/beg_js/madlibs_solution.js">Show Solution</a></h3>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Calculator]]></title>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/calculator/"/>
+    <updated>2014-10-04T16:21:42-04:00</updated>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/calculator</id>
+    <content type="html"><![CDATA[<h2>The Calculator</h2>
+
+<p>You can use something like <a href="http://repl.it">repl.it</a> to code this so that you don&rsquo;t need to worry about making a webpage, or you can create a whole webpage for it, with inputs and buttons. You may want to start off with just JS and then add the UI later, but it&rsquo;s up to you.</p>
+
+<p>You may find <a href="http://www.teaching-materials.org/javascript/slides/varsfunctions.html">these slides</a> useful.</p>
+
+<ul>
+<li>Write a function called <code>squareNumber</code> that will take one argument (a number), square that number, and return the result. It should also log a string like <code>"The result of squaring the number 3 is 9."</code></li>
+<li>Write a function called <code>halfNumber</code> that will take one argument (a number), divide it by 2, and return the result. It should also log a string like <code>"Half of 5 is 2.5."</code></li>
+<li>Write a function called <code>percentOf</code> that will take two numbers, figure out what percent the first number represents of the second number, and return the result. It should also log a string like &ldquo;2 is 50% of 4.&rdquo;</li>
+<li>Write a function called <code>areaOfCircle</code> that will take one argument (the radius), calculate the area based on that, and return the result. It should also log a string like <code>"The area for a circle with radius 2 is 12.566370614359172"</code></li>
+<li><strong>Bonus:</strong> Round the result so there are only two digits after the decimal.</li>
+<li>Write a function that will take one argument (a number) and perform the following operations, using the functions you wrote earlier:
+
+<ul>
+<li>Take half of the number and store the result.</li>
+<li>Square the result of #1 and store that result.</li>
+<li>Calculate the area of a circle with the result of #2 as the radius.</li>
+<li>Calculate what percentage that area is of the squared result (#3).</li>
+</ul>
+</li>
+</ul>
+
+
+<h3><a href="/files/beg_js/calculator_solution.js">See Solution</a></h3>
+]]></content>
+  </entry>
+  
+</feed>

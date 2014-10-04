@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>CSS Positioning - Programming Workshop</title>
+  <meta name="author" content="Kristi Centinaro">
+
+  
+  <meta name="description" content="CSS Positioning You may want to consult these slides. The goal is to use the CSS position property to create a webpage that looks like the one below &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://workshop.theresnobox.net/blog/2014/10/04/css-positioning">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Programming Workshop" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900italic' rel='stylesheet' type='text/css'>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+  
+
+</head>
+
+<body   >
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:workshop.theresnobox.net" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  
+    <header role="banner"><hgroup class="main-header">
+    <h1>
+        <a href="/">
+            <span class="smaller">Programming</span>
+            <span class="larger">Workshop</span>
+        </a>
+    </h1>
+    <p class="sub-head">Bite-sized exercises you can do 
+    in 2-6 hours, designed to help you master HTML, CSS, or JavaScript.
+    </p>
+</hgroup>
+
+</header>
+    <section class="levels-list horiz-list">
+      
+        <a class="level-label horiz-label level-1 small" href="/blog/categories/html-and-css">
+    <div class="label-icon">
+        <i class="fa fa-star"></i>
+        <span class="level-id">1</span>
+    </div>
+    <div class="label-name">
+        HTML & CSS
+    </div>
+</a>
+      
+        <a class="level-label horiz-label level-2 small" href="/blog/categories/advanced-css">
+    <div class="label-icon">
+        <i class="fa fa-star"></i>
+        <span class="level-id">2</span>
+    </div>
+    <div class="label-name">
+        Advanced CSS
+    </div>
+</a>
+      
+        <a class="level-label horiz-label level-3 small" href="/blog/categories/beginner-js">
+    <div class="label-icon">
+        <i class="fa fa-star"></i>
+        <span class="level-id">3</span>
+    </div>
+    <div class="label-name">
+        Beginner JS
+    </div>
+</a>
+      
+        <a class="level-label horiz-label level-4 small" href="/blog/categories/advanced-js">
+    <div class="label-icon">
+        <i class="fa fa-star"></i>
+        <span class="level-id">4</span>
+    </div>
+    <div class="label-name">
+        Advanced JS
+    </div>
+</a>
+      
+    </section>
+  
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">CSS Positioning</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-10-04T11:23:29-04:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>4</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>11:23 am</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h1>CSS Positioning</h1>
+
+<p>You may want to consult <a href="http://www.teaching-materials.org/htmlcss-1day/html-embeds/slides.html#slide1">these slides</a>.</p>
+
+<p>The goal is to use the CSS position property to create a webpage that looks like the one below.</p>
+
+<p>Use Google Images search to find clipart like the images in the example.</p>
+
+<p>Here&rsquo;s what it looks like with a window width of 800x530:
+<img src="/images/posts/html_css/farmparty1.png"></p>
+
+<p>Here&rsquo;s what it looks like when the window is 400x475 - notice how elements resize:
+<img src="/images/posts/html_css/farmparty2.png"></p>
+
+<h2>Here are recommended steps for making this happen:</h2>
+
+<ol>
+<li>Create a blank web page with just html, head, body, and a style tag.</li>
+<li>Change the background of the page to be a sky blue and have a background image of clouds.</li>
+<li>Create a div for the grass - position it at the bottom and give it an appropriate height.</li>
+<li>Create a div for the &ldquo;Farm Party!&rdquo; banner - position it near the top center area, and style the text so that it&rsquo;s red. For a bonus, use a fun custom font (like from Google Web Fonts) and give it the appearance of a black stroke.</li>
+<li>For each of the images shown, search for an appropriate image on Google Image search - it doesn&rsquo;t have to be the exact same. Try searches like &ldquo;sheep animated gif&rdquo; and if you need to, restrict the results to just &ldquo;clip art&rdquo;. When you find the image, create a img for it on the page.</li>
+<li>Position each of the img elements appropriately. The sheep should be around the bottom left, the cow should be on the horizon, the dude should be dancing in the middle, the tree should be on the front right, and the sun should be around the upper right.</li>
+<li><strong>As a bonus,</strong> position a picture of your face on top of the dude, and watch yourself have a farm party!</li>
+</ol>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Kristi Centinaro</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-10-04T11:23:29-04:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>4</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>11:23 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/html-and-css/'>html & css</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://workshop.theresnobox.net/blog/2014/10/04/css-positioning/" data-via="@thersnobox" data-counturl="http://workshop.theresnobox.net/blog/2014/10/04/css-positioning/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/10/04/embedding-html/" title="Previous Post: Embedding HTML">&laquo; Embedding HTML</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/10/04/media-queries/" title="Next Post: Media Queries">Media Queries &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/10/04/memory-game/">Memory Game</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/04/word-guesser/">Word Guesser</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/04/cat-walk/">Cat Walk</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/04/mad-libs/">Mad Libs</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/04/calculator/">Calculator</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Kristi Centinaro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

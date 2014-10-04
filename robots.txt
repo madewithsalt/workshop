@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://workshop.theresnobox.net/sitemap.xml 

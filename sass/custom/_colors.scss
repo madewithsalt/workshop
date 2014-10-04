@@ -4,6 +4,7 @@
 
 $main-bg: #FFFEF7;
 $header-bg: #093440;
+$title-color: $header-bg;
 //$subtitle-color: lighten($header-bg, 58);
 //$nav-bg: desaturate(lighten(#8fc17a, 18), 5);
 //$nav-bg-front: image-url('noise.png');
@@ -14,6 +15,31 @@ $header-bg: #093440;
 //$footer-bg: #ccc !default;
 //$footer-bg-front: image-url('noise.png');
 //$footer-bg-back: linear-gradient(lighten($footer-bg, 8), $footer-bg, darken($footer-bg, 11));
+
+
+// LEVEL COLORS
+$level-1: #81CC35;
+$level-2: #D666ED;
+$level-3: #F5A623;
+$level-4: #4A90E2;
+
+@function getColor($id) {
+  @if $id == 1 {
+    @return $level-1;
+  }
+
+  @if $id == 2 {
+    @return $level-2;
+  }
+
+  @if $id == 3 {
+    @return $level-3;
+  }
+
+  @if $id == 4 {
+    @return $level-4;
+  }
+}
 
 
 /* To use the light Solarized highlighting theme uncomment the following line */

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Html & Css | Programming Workshop]]></title>
+  <link href="http://workshop.theresnobox.net/blog/categories/html-and-css/atom.xml" rel="self"/>
+  <link href="http://workshop.theresnobox.net/"/>
+  <updated>2014-10-04T16:53:00-04:00</updated>
+  <id>http://workshop.theresnobox.net/</id>
+  <author>
+    <name><![CDATA[Kristi Centinaro]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Copycat Website]]></title>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/copycat-website/"/>
+    <updated>2014-10-04T16:16:45-04:00</updated>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/copycat-website</id>
+    <content type="html"><![CDATA[<h1>HTML Copycat Exercise</h1>
+
+<p>What&rsquo;s one of your favorite websites to visit? Imitation is the highest form of flattery, so why don&rsquo;t you try to imitate it?</p>
+
+<ul>
+<li>Open up the webpage and keep it open as reference</li>
+<li>Create a basic webpage wih that webpage&rsquo;s content (or atleast a small subset of it, like one blog post if its a blog).</li>
+<li>Set up the layout for the webpage using a framework like Twitter Bootstrap.</li>
+<li>Change the text and background color to match.</li>
+<li>Figure out if you need a custom font to match their font.</li>
+<li>Keep going until it looks close!</li>
+</ul>
+
+
+<h3>Inspiring Website Resources</h3>
+
+<ul>
+<li><a href="http://www.csszengarden.com">CSS Zen Garden</a></li>
+<li><a href="http://www.webdesign-inspiration.com/">Web Design Inspiration</a></li>
+<li><a href="http://www.designbombs.com/">Design Bombs</a></li>
+<li><a href="https://dribbble.com/">Dribbble</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Event Invitation]]></title>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/event-invitation/"/>
+    <updated>2014-10-04T16:14:01-04:00</updated>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/event-invitation</id>
+    <content type="html"><![CDATA[<h1>HTML Event Invite Exercise</h1>
+
+<p>What&rsquo;s an upcoming event that you&rsquo;re organizing or that you&rsquo;re attending and want others to come to? Create a webpage for that event!</p>
+
+<h2>Steps</h2>
+
+<ul>
+<li>Create a basic webpage with the event name, logistical information (in a table), and an embedded Google Map of where it is.</li>
+<li>Create a Google form and embed it on the page.</li>
+<li>Come up with a color scheme, using <a href="http://paletton.com/">Color Scheme Designer</a> or <a href="http://www.colourlovers.com/">ColourLovers</a>, and apply that using CSS to parts of your page.</li>
+<li>Find a <a href="google.com/fonts">Google Web Font</a> that suits your event theme, and use that for the headers of your page.</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Twitter Bootstrap Practice]]></title>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/twitter-bootstrap-practice/"/>
+    <updated>2014-10-04T11:36:06-04:00</updated>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/twitter-bootstrap-practice</id>
+    <content type="html"><![CDATA[<h1>CSS: Bootstrap Exercise</h1>
+
+<p>The goal of this exercise is to use the various elements of the Twitter Bootstrap framework to make a webpage.</p>
+
+<ul>
+<li>Start with <a href="/files/html_css/bootstrap/bootstrap_before.html">this webpage</a>.</li>
+<li><p>Use the <a href="http://getbootstrap.com/css/#grid">Bootstrap grids classes</a> to create this webpage with a sidebar and main content:
+<img src="/images/posts/html_css/bootstrap1.png"></p></li>
+<li><p>Use the <a href="http://getbootstrap.com/css/#type">Bootstrap base CSS classes</a> to add a quote, table, and search form to the page:
+<img src="/images/posts/html_css/bootstrap2.png"></p></li>
+<li><p>Use the <a href="http://getbootstrap.com/components/#alerts">Bootstrap alert component</a> to add a danger alert. Use the <a href="http://getbootstrap.com/components/#thumbnails">thumbnails classes</a> to give the images borders.
+<img src="/images/posts/html_css/bootstrap3.png"></p></li>
+</ul>
+
+
+<p><a href="http://www.pairuptocode.com/exercises/bootstrap_solution.html">View Solution in New Window</a></p>
+
+<p>All done? (Or close enough?) Share what you made with everyone!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CSS Positioning]]></title>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/css-positioning/"/>
+    <updated>2014-10-04T11:23:29-04:00</updated>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/css-positioning</id>
+    <content type="html"><![CDATA[<h1>CSS Positioning</h1>
+
+<p>You may want to consult <a href="http://www.teaching-materials.org/htmlcss-1day/html-embeds/slides.html#slide1">these slides</a>.</p>
+
+<p>The goal is to use the CSS position property to create a webpage that looks like the one below.</p>
+
+<p>Use Google Images search to find clipart like the images in the example.</p>
+
+<p>Here&rsquo;s what it looks like with a window width of 800x530:
+<img src="/images/posts/html_css/farmparty1.png"></p>
+
+<p>Here&rsquo;s what it looks like when the window is 400x475 - notice how elements resize:
+<img src="/images/posts/html_css/farmparty2.png"></p>
+
+<h2>Here are recommended steps for making this happen:</h2>
+
+<ol>
+<li>Create a blank web page with just html, head, body, and a style tag.</li>
+<li>Change the background of the page to be a sky blue and have a background image of clouds.</li>
+<li>Create a div for the grass - position it at the bottom and give it an appropriate height.</li>
+<li>Create a div for the &ldquo;Farm Party!&rdquo; banner - position it near the top center area, and style the text so that it&rsquo;s red. For a bonus, use a fun custom font (like from Google Web Fonts) and give it the appearance of a black stroke.</li>
+<li>For each of the images shown, search for an appropriate image on Google Image search - it doesn&rsquo;t have to be the exact same. Try searches like &ldquo;sheep animated gif&rdquo; and if you need to, restrict the results to just &ldquo;clip art&rdquo;. When you find the image, create a img for it on the page.</li>
+<li>Position each of the img elements appropriately. The sheep should be around the bottom left, the cow should be on the horizon, the dude should be dancing in the middle, the tree should be on the front right, and the sun should be around the upper right.</li>
+<li><strong>As a bonus,</strong> position a picture of your face on top of the dude, and watch yourself have a farm party!</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Embedding HTML]]></title>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/embedding-html/"/>
+    <updated>2014-10-04T10:59:53-04:00</updated>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/embedding-html</id>
+    <content type="html"><![CDATA[<h1>HTML Embed Exercise</h1>
+
+<p>In this exercise, you&rsquo;ll create a webpage of many embedded elements. For some of these, you may have to google to figure out how to get embed codes - some sites make it easier/more obvious than others.</p>
+
+<p>You may also want to consult <a href="http://www.teaching-materials.org/htmlcss-1day/html-embeds/slides.html#slide1">these slides</a>.</p>
+
+<ol>
+<li>Create a new blank page with just a header (“All About Dogs”).</li>
+<li>Take a look at the <code>Network</code> tab in Chrome Developer Tools and write down the loading stats on the page - number of requests, KB transferred, onload ms, DOMContentLoaded ms.</li>
+<li>Add an embedded Google Map that shows dog parks in San Francisco.</li>
+<li>Add Facebook comments to your page.</li>
+<li>Add a Twitter button to the page.</li>
+<li>Create a Google custom search engine that searches across multiple dog sites and embed the search box on the page.</li>
+<li>For each of the embeds, add comments around them to show where they start and end, and add an h2 to split the page up into sections.</li>
+<li>Take a look at the <code>Network</code> tab again and write down the new stats on the page.</li>
+</ol>
+
+
+<p><img src="/images/posts/html_css/embed_html1.png">
+<em>An example of the Network Tab in Chrome Developer Tools.</em></p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,59 @@
+---
+layout: post
+title: "Cat Walk"
+date: 2014-10-04 16:35:29 -0400
+comments: true
+summary: "Practice Events, the DOM, and Animations"
+categories: ["Beginner JS"] 
+---
+
+# Cat Walk
+The goal of this exercise to make an awesome interactive animated cat.
+
+You may find [these slides](http://www.teaching-materials.org/javascript/slides/animevents.html) helpful.
+
+Start with this webpage, which has an img of a cat walking, and JavaScript functions that animate the cat across the screen. (For all of these, you shouldn't need to touch the original code - just add code below.)
+
+{% codeblock %}
+  <!DOCTYPE html>
+  <html>
+   <head>
+    <meta charset="utf-8" />
+    <title>Cat Walk</title>
+   </head>
+   <body>
+    
+    <button id="start-button">Start</button>
+    <button id="speed-button">Go Faster!</button>
+    <button id="stop-button">Stop</button>
+    <div id="info"></div>
+    
+    <img style="position:absolute; left: 0px; top: 80px;" src="http://www.anniemation.com/clip_art/images/cat-walk.gif">
+
+    <script>
+      var movePixels = 10;
+      var delayMs = 50;
+      var catTimer = null;
+      function catWalk() {
+        var img = document.getElementsByTagName('img')[0];
+        var currentLeft = parseInt(img.style.left);
+        img.style.left = (currentLeft + movePixels) + 'px';
+        if (currentLeft > (window.innerWidth-img.width)) {
+          img.style.left = '0px';
+        }
+      }
+      function startCatWalk() {
+        catTimer = window.setInterval(catWalk, delayMs);
+      }
+    </script>
+
+   </body>
+  </html>
+{% endcodeblock %}
+      
+- Add an event listener to the start button, so that the cat starts moving across the screen when its clicked.
+- Add an event listener to the stop button, so that the cat stops moving when clicked.
+- Add an event listener to the speed button, so that the cat moves faster when it's clicked.
+- **Bonus:** Disable the start/stop/faster buttons at the appropriate times (e.g. the user shouldn't be able to click "stop" if the cat isn't currently moving.)
+
+### [See Solutions](/files/beg_js/catwalk_solution.js)

@@ -1,0 +1,51 @@
+article {  
+  .entry-title {
+    @include light;
+    text-transform: uppercase;
+  }
+}
+
+#blog-archives {
+  article {
+    margin: 0;
+    padding: 4px 6px;
+  }
+
+  .category-list-item {
+    padding-top: 8px;
+     
+    a {
+      color: $title-color;
+      font-size: 1.75em;
+      text-decoration: none;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.entry-content {
+  h1, h2, h3, h4, h5, h6 {
+    margin: 8px 0;
+  }
+
+  ul, ol {
+    list-style-position: outside;
+    padding-left: 22px;
+
+    li {
+      margin-bottom: 4px;
+    }
+  }
+
+}
+
+
+.levels-list {
+  &.horiz-list {
+    margin: 3px 55px;
+  }
+}

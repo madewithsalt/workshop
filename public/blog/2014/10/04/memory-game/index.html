@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Memory Game - Programming Workshop</title>
+  <meta name="author" content="Kristi Centinaro">
+
+  
+  <meta name="description" content="The Memory Game In this exercise, you&rsquo;ll make a LOLCat memory game &ndash; you can see a screenshot of a sample solution on the right. A memory &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://workshop.theresnobox.net/blog/2014/10/04/memory-game">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Programming Workshop" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900italic' rel='stylesheet' type='text/css'>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+  
+
+</head>
+
+<body   >
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:workshop.theresnobox.net" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  
+    <header role="banner"><hgroup class="main-header">
+    <h1>
+        <a href="/">
+            <span class="smaller">Programming</span>
+            <span class="larger">Workshop</span>
+        </a>
+    </h1>
+    <p class="sub-head">Bite-sized exercises you can do 
+    in 2-6 hours, designed to help you master HTML, CSS, or JavaScript.
+    </p>
+</hgroup>
+
+</header>
+    <section class="levels-list horiz-list">
+      
+        <a class="level-label horiz-label level-1 small" href="/blog/categories/html-and-css">
+    <div class="label-icon">
+        <i class="fa fa-star"></i>
+        <span class="level-id">1</span>
+    </div>
+    <div class="label-name">
+        HTML & CSS
+    </div>
+</a>
+      
+        <a class="level-label horiz-label level-2 small" href="/blog/categories/advanced-css">
+    <div class="label-icon">
+        <i class="fa fa-star"></i>
+        <span class="level-id">2</span>
+    </div>
+    <div class="label-name">
+        Advanced CSS
+    </div>
+</a>
+      
+        <a class="level-label horiz-label level-3 small" href="/blog/categories/beginner-js">
+    <div class="label-icon">
+        <i class="fa fa-star"></i>
+        <span class="level-id">3</span>
+    </div>
+    <div class="label-name">
+        Beginner JS
+    </div>
+</a>
+      
+        <a class="level-label horiz-label level-4 small" href="/blog/categories/advanced-js">
+    <div class="label-icon">
+        <i class="fa fa-star"></i>
+        <span class="level-id">4</span>
+    </div>
+    <div class="label-name">
+        Advanced JS
+    </div>
+</a>
+      
+    </section>
+  
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Memory Game</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-10-04T16:44:32-04:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>4</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>4:44 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h1>The Memory Game</h1>
+
+<p>In this exercise, you&rsquo;ll make a LOLCat memory game &ndash; you can see a screenshot of a sample solution on the right. A memory game consists of an even number of tiles with images on one side and a generic back. Each image appears on precisely two tiles. You start the game with all tiles turned face down, and proceed to flip over two tiles at a time. If the two tiles have the same image, they remain face up. If not, they&rsquo;re flipped face down again after a short delay. The goal of the game is to get all the tiles flipped face up (i.e., find all the matching image pairs) in the least number of tries.</p>
+
+<p><img src="/images/posts/beg_js/memory1.png"><br/>
+<em>Example of what we&rsquo;re building.</em></p>
+
+<p>We&rsquo;ll make the game more fun by using random LOLCat images from <a href="http://lolcat.com">http://lolcat.com</a> for the tiles. This site works particularly well for our purposes because their images follow a regular naming scheme so we can avoid scraping image URLs from sites by hand. The lolcat.com image URLs follow the pattern <code>http://lolcat.com/images/lolcats/NNNN.jpg</code>, where <code>NNNN</code> is a sequentially assigned number. Some experimentation shows that most of the range between <code>900</code> and <code>1250</code> works well, though a few of the images are missing. (If you happen to pick a missing one, it&rsquo;ll appear as a broken image as show in the example &ndash; don&rsquo;t worry about it, or just reload your page to pick another set.)</p>
+
+<h2>Here are some suggested steps for building the game:</h2>
+
+<p>Write the HTML for the game&rsquo;s page, displaying a grid of face-down tiles. You can use any image you want for the tiles&#8217; backs, but make sure it&rsquo;s not easily confused with the LOLCat pictures, so it&rsquo;s clear whether a tile is face up or face down.</p>
+
+<p>You&rsquo;ll probably want to use a <code>&lt;table&gt;</code> to lay out the tiles, and set the width and height of each image by hand. You can either write the table by hand into your HTML file, or write code to generate it dynamically using <code>document.createElement</code> and <code>appendChild</code>.</p>
+
+<p>Write code to pick a bunch of random LOLCat image URLs and stick two copies of each URL into an array, then randomize the order of the array (using the code from the previous exercise).</p>
+
+<p>You might also take this opportunity to preload the images so there&rsquo;ll be no delay when they&rsquo;re flipped over for the first time. Make the preload images visible for now so you can verify that you&rsquo;re forming the URLs correctly.</p>
+
+<p>Assign one LOLCat URL from the randomized array to each tile. The easiest way to attach the URLs is to store them in a made-up attribute (e.g. facesrc) right on the DOM image elements.</p>
+
+<p>The browser will ignore any attributes it doesn&rsquo;t understand, but you&rsquo;ll be able to retrieve them later in your code when handling click events on the elements. (Note though that Firebug will not show your custom attribute in the DOM pane.)</p>
+
+<p>Attach a <code>click</code> handler to each tile that will turn it face up. Make sure that clicking on tiles that are already face up does nothing.</p>
+
+<p>Add a <code>timeout</code> handler when a tile is turned face up that will flip the tile face down again after a short delay (e.g., 500 milliseconds).
+Add the game logic that keeps track of the tiles that are face up and reacts appropriately based on whether they match or not.</p>
+
+<p>You should now have a working game! Have fun playing it and tweaking it to really make it your own.</p>
+
+<p><strong>Here&rsquo;s a few suggestions for extra features you could add:</strong>
+  - Add an outline around &ldquo;active&rdquo; tiles (flipped up but not yet matched) so it&rsquo;s clear which tile the player is currently trying to match.
+  Add a timer or move counter to make the game more competitive. (For the timer, window.setInterval() could prove useful.)
+  - When the game is over, allow the player to see the full-size LOLCat pictures from the tiles.
+  - Allow the player to start a new game with a button, rather than by reloading the page. You could also allow them to pick the size of the board to play on.
+  - Manually make a list of &ldquo;bad&rdquo; image numbers in the code to avoid picking them, or find a different source of pictures to play with.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Kristi Centinaro</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-10-04T16:44:32-04:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>4</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>4:44 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/advanced-js/'>advanced js</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://workshop.theresnobox.net/blog/2014/10/04/memory-game/" data-via="@thersnobox" data-counturl="http://workshop.theresnobox.net/blog/2014/10/04/memory-game/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/10/04/word-guesser/" title="Previous Post: Word Guesser">&laquo; Word Guesser</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/10/04/memory-game/">Memory Game</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/04/word-guesser/">Word Guesser</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/04/cat-walk/">Cat Walk</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/04/mad-libs/">Mad Libs</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/04/calculator/">Calculator</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Kristi Centinaro -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

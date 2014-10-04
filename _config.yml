@@ -25,16 +25,16 @@ email:
 # Information around the main category/level types used in the site.
 levels: 
   - id: "1"
-    slug: html-css
+    slug: "html-and-css"
     name: "HTML & CSS"
   - id: "2"
-    slug: adv-css
+    slug: "advanced-css"
     name: "Advanced CSS"
   - id: "3"
-    slug: beg-js
+    slug: "beginner-js"
     name: "Beginner JS"
   - id: "4"
-    slug:  adv-js
+    slug: "advanced-js"
     name: "Advanced JS"
 
 # ----------------------- #

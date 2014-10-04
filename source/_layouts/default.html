@@ -4,6 +4,11 @@
   <nav role="navigation">{% include navigation.html %}</nav>
   {% unless page.header == false %}
     <header role="banner">{% include header.html %}</header>
+    <section class="levels-list horiz-list">
+      {% for level in site.levels %}
+        {% include custom/label-horiz.html level=level size="small" %}
+      {% endfor %}
+    </section>
   {% endunless %}
   <div id="main">
     <div id="content">

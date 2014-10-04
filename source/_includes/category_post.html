@@ -1,0 +1,9 @@
+{% capture category %}
+    {{ post.categories | size }}
+{% endcapture %}
+<div class="category-list-item">
+    <a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
+    {% if post.summary %}
+        <p>{{ post.summary }}</p>
+    {% endif %}
+</div>

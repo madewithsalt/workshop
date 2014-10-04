@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Advanced Css | Programming Workshop]]></title>
+  <link href="http://workshop.theresnobox.net/blog/categories/advanced-css/atom.xml" rel="self"/>
+  <link href="http://workshop.theresnobox.net/"/>
+  <updated>2014-10-04T16:53:00-04:00</updated>
+  <id>http://workshop.theresnobox.net/</id>
+  <author>
+    <name><![CDATA[Kristi Centinaro]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Media Queries]]></title>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/media-queries/"/>
+    <updated>2014-10-04T11:28:00-04:00</updated>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/media-queries</id>
+    <content type="html"><![CDATA[<h1>CSS: Media Queries Exercise</h1>
+
+<p>The goal of this exercise is to use CSS media queries to make a webpage appeardifferent for printing and for different window sizes.</p>
+
+<p>Start with <a href="http://www.teaching-materials.org/csstools/exercise_media_before.html">this webpage</a>, which already has HTML and CSS for a header, navigation, content, sidebar, and footer. This is what it looks like:
+<img src="/images/posts/html_css/media_queries1.png"></p>
+
+<h2>Print Media Queries</h2>
+
+<p>Add a CSS media query and appropriate styles so that the webpage looks like the screenshot below when printed.</p>
+
+<p><img src="/images/posts/html_css/media_queries2.png"></p>
+
+<h3>Specifically:</h3>
+
+<p><em>The header, navigation, and footer should be hidden.<br/>
+The sidebar should display under the main content.</em></p>
+
+<h2>Size Media Queries</h2>
+
+<p>Add a CSS media query and appropriate styles so that the webpage looks like the screenshots below when resized to smaller widths.</p>
+
+<h3>Specifically:</h3>
+
+<ul>
+<li>The sidebar should be hidden.</li>
+<li>The body should have no padding.</li>
+<li>The images shouldn&rsquo;t exceed the width of the window.</li>
+<li>The navigation items should each be on their own line.</li>
+<li>The header should be fixed, so that it stays at the top after scrolling.</li>
+</ul>
+
+
+<h3>Examples:</h3>
+
+<p><img src="/images/posts/html_css/media_queries3.png"></p>
+]]></content>
+  </entry>
+  
+</feed>

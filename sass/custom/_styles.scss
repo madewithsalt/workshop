@@ -4,6 +4,10 @@
 @import "modules/**/*";
 @import "pages/**/*";
 
+body {
+  font-family: $sans;
+}
+
 body>nav, body>footer, html  {
   background-color: transparent;
   background: $main-bg $noise-bg;
@@ -15,8 +19,11 @@ body>nav, body>footer, html  {
   padding: 20px;
 }
 
-header .main-header, .homepage > header {
-  color: $header-bg;
+body > header {
+  padding: 15px 55px;
+}
+
+.main-header, .homepage > header {
   font-family: $sans;
 
   h1 {
@@ -48,3 +55,18 @@ header .main-header, .homepage > header {
     font-size: 150%;
   }
 }
+
+.homepage > header {
+  padding: 1.5em 55px;
+}
+
+.main-header {
+  .sub-head {
+    font-size: 110%;
+  }
+}
+
+#content > div, #content > article {
+  padding-top: 8px;
+}
+

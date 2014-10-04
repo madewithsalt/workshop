@@ -1,32 +1,43 @@
-$lesson-1: #81CC35;
-$lesson-2: #D666ED;
-$lesson-3: #F5A623;
-$lesson-4: #4A90E2;
-
-@function getColor($id) {
-  @if $id == 1 {
-    @return $lesson-1;
-  }
-
-  @if $id == 2 {
-    @return $lesson-2;
-  }
-
-  @if $id == 3 {
-    @return $lesson-3;
-  }
-
-  @if $id == 4 {
-    @return $lesson-4;
-  }
-}
-
-.lesson-label {
+.level-label {
   font-family: $sans;
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
   @include transition(all 0.3s ease-in);
+
+  $i: 4;
+  @while $i > 0 {
+    $color: getColor($i);
+    $hover-color: darken($color, 15);
+
+    &.level-#{$i} { 
+      background-color: $color;
+
+      .label-icon {
+        .level-id {
+          color: $color;
+        }
+      }
+
+      &:hover {
+        background-color: $hover-color;
+
+        .label-icon .level-id {
+          color: $hover-color;
+        }
+      }
+    }
+    $i: $i - 1;
+  }
+
+  &:hover {
+    .label-icon {
+      .fa {
+        @include text-shadow(0 2px 3px rgba(0,0,0,0.2));
+      }
+    }
+  }
+
 
   &.vertical-label {
     text-align: center;
@@ -39,56 +50,62 @@ $lesson-4: #4A90E2;
       padding: 10px;
     }
 
-    $i: 4;
-    @while $i > 0 {
-      $color: getColor($i);
-      $hover-color: darken($color, 15);
+    .label-icon {
+      text-align: center;
+      height: 140px;
 
-      &.lesson-#{$i} { 
-        background-color: $color;
-
-        .label-icon {
-          .lesson-id {
-            color: $color;
-          }
-        }
-
-        &:hover {
-          background-color: $hover-color;
-
-          .label-icon .lesson-id {
-            color: $hover-color;
-          }
-        }
+      .fa {
+        color: #fff;
+        font-size: 130px;
       }
-      $i: $i - 1;
-    }
 
-    &:hover {
-      .label-icon {
-        .fa {
-          @include text-shadow(0 2px 3px rgba(0,0,0,0.2));
-        }
+      .level-id {
+        font-size: 50px;
+        display: block;
+        margin-top: -80px;
+        @include extra-bold;
       }
     }
 
   }
 
-  .label-icon {
-    text-align: center;
-    height: 140px;
+  &.horiz-label {
+    display: inline-block;
+    margin-right: 6px;
+    text-align: left;
+    @include box-sizing('border-box');
 
-    .fa {
-      color: #fff;
-      font-size: 130px;
+    &.small {
+      border-radius: 6px;
+      width: 180px;
+      padding: 2px 6px;
     }
 
-    .lesson-id {
-      font-size: 50px;
-      display: block;
-      margin-top: -80px;
-      @include extra-bold;
+    .label-icon {
+      text-align: left;
+      height: 30px;
+
+      .fa {
+        color: #fff;
+        font-size: 30px;
+        line-height: 32px;
+        vertical-align: middle;
+      }
+
+      .level-id {
+        font-size: 16px;
+        display: block;
+        @include extra-bold;
+        margin-top: -30px;
+        margin-left: 10px;
+      }
     }
+
+    .label-name, .label-icon {
+      display: inline-block;
+    }
+
+
   }
 
   .label-name {

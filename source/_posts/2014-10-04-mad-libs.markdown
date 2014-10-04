@@ -1,0 +1,39 @@
+---
+layout: post
+title: "Mad Libs"
+date: 2014-10-04 16:29:44 -0400
+comments: true
+summary: "Practice Events and working with the DOM with form inputs"
+categories: ["Beginner JS"]
+---
+
+The goal of this exercise is to make a Mad Libs generator.
+
+The second half of [these slides](http://www.teaching-materials.org/javascript/slides/animevents.html) may be useful.
+
+Start with this webpage, which has several input elements and a button:
+{% codeblock %}
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <h1>Mad Libs</h1>
+    <ul>
+      <li>Noun: <input type="text" id="noun">
+      <li>Adjective: <input type="text" id="adjective">
+      <li>Someone's Name: <input type="text" id="name">
+    </ul>
+    <button id="lib-button">Lib it!</button>
+    <div id="story"></div>
+  </body>
+  </html>
+{% endcodeblock %} 
+
+- Add a script tag to the bottom of the page for your code.
+- Add an event listener to the button so that it calls a `makeMadLib` function when clicked.
+- In the `makeMadLib` function, retrieve the current values of the form input elements, make a story from them, and output that in the story div (like "Pamela really likes pink cucumbers.")
+
+### [Show Solution](/files/beg_js/madlibs_solution.js)

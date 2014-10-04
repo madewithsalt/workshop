@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Advanced Css | Programming Workshop]]></title>
-  <link href="http://workshop.theresnobox.net/blog/categories/advanced-css/atom.xml" rel="self"/>
-  <link href="http://workshop.theresnobox.net/"/>
-  <updated>2014-10-04T16:57:54-04:00</updated>
-  <id>http://workshop.theresnobox.net/</id>
+  <link href="http://tnbKristi.github.io/workshop/blog/categories/advanced-css/atom.xml" rel="self"/>
+  <link href="http://tnbKristi.github.io/workshop/"/>
+  <updated>2014-10-04T17:09:50-04:00</updated>
+  <id>http://tnbKristi.github.io/workshop/</id>
   <author>
     <name><![CDATA[Kristi Centinaro]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Media Queries]]></title>
-    <link href="http://workshop.theresnobox.net/blog/2014/10/04/media-queries/"/>
+    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/media-queries/"/>
     <updated>2014-10-04T11:28:00-04:00</updated>
-    <id>http://workshop.theresnobox.net/blog/2014/10/04/media-queries</id>
+    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/media-queries</id>
     <content type="html"><![CDATA[<h1>CSS: Media Queries Exercise</h1>
 
 <p>The goal of this exercise is to use CSS media queries to make a webpage appeardifferent for printing and for different window sizes.</p>

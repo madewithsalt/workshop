@@ -5,7 +5,7 @@ article {
   }
 }
 
-#blog-archives {
+#blog-archives.category {
   article {
     margin: 0;
     padding: 4px 6px;
@@ -13,7 +13,7 @@ article {
 
   .category-list-item {
     padding-top: 8px;
-     
+
     a {
       color: $title-color;
       font-size: 1.75em;

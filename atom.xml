@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Programming Workshop]]></title>
-  <link href="http://workshop.theresnobox.net/atom.xml" rel="self"/>
-  <link href="http://workshop.theresnobox.net/"/>
-  <updated>2014-10-04T16:57:54-04:00</updated>
-  <id>http://workshop.theresnobox.net/</id>
+  <link href="http://tnbKristi.github.io/workshop/atom.xml" rel="self"/>
+  <link href="http://tnbKristi.github.io/workshop/"/>
+  <updated>2014-10-04T17:09:50-04:00</updated>
+  <id>http://tnbKristi.github.io/workshop/</id>
   <author>
     <name><![CDATA[Kristi Centinaro]]></name>
     
@@ -15,14 +15,14 @@
   
   <entry>
     <title type="html"><![CDATA[Memory Game]]></title>
-    <link href="http://workshop.theresnobox.net/blog/2014/10/04/memory-game/"/>
+    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/memory-game/"/>
     <updated>2014-10-04T16:44:32-04:00</updated>
-    <id>http://workshop.theresnobox.net/blog/2014/10/04/memory-game</id>
+    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/memory-game</id>
     <content type="html"><![CDATA[<h1>The Memory Game</h1>
 
 <p>In this exercise, you&rsquo;ll make a LOLCat memory game &ndash; you can see a screenshot of a sample solution on the right. A memory game consists of an even number of tiles with images on one side and a generic back. Each image appears on precisely two tiles. You start the game with all tiles turned face down, and proceed to flip over two tiles at a time. If the two tiles have the same image, they remain face up. If not, they&rsquo;re flipped face down again after a short delay. The goal of the game is to get all the tiles flipped face up (i.e., find all the matching image pairs) in the least number of tries.</p>
 
-<p><img src="http://workshop.theresnobox.net/images/posts/beg_js/memory1.png"><br/>
+<p><img src="http://tnbKristi.github.io/workshop/images/posts/beg_js/memory1.png"><br/>
 <em>Example of what we&rsquo;re building.</em></p>
 
 <p>We&rsquo;ll make the game more fun by using random LOLCat images from <a href="http://lolcat.com">http://lolcat.com</a> for the tiles. This site works particularly well for our purposes because their images follow a regular naming scheme so we can avoid scraping image URLs from sites by hand. The lolcat.com image URLs follow the pattern <code>http://lolcat.com/images/lolcats/NNNN.jpg</code>, where <code>NNNN</code> is a sequentially assigned number. Some experimentation shows that most of the range between <code>900</code> and <code>1250</code> works well, though a few of the images are missing. (If you happen to pick a missing one, it&rsquo;ll appear as a broken image as show in the example &ndash; don&rsquo;t worry about it, or just reload your page to pick another set.)</p>
@@ -59,9 +59,9 @@ Add the game logic that keeps track of the tiles that are face up and reacts app
   
   <entry>
     <title type="html"><![CDATA[Word Guesser]]></title>
-    <link href="http://workshop.theresnobox.net/blog/2014/10/04/word-guesser/"/>
+    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/word-guesser/"/>
     <updated>2014-10-04T16:39:20-04:00</updated>
-    <id>http://workshop.theresnobox.net/blog/2014/10/04/word-guesser</id>
+    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/word-guesser</id>
     <content type="html"><![CDATA[<h1>The Word Guesser</h1>
 
 <p>You&rsquo;ll create a simple word guessing game where the user gets infinite tries to guess the word (like Hangman without the hangman, or like Wheel of Fortune without the wheel and fortune).</p>
@@ -92,15 +92,15 @@ Add the game logic that keeps track of the tiles that are face up and reacts app
 - Keep track of the state of the hangman as a number (starting at 0), and subtract or add to that number every time they make a wrong guess.
 Once the number reaches 6 (a reasonable number of body parts for a hangman), inform the user that they lost and show a hangman on the log.</p>
 
-<h3><a href="http://workshop.theresnobox.net/files/beg_js/wordguess_solution.js">See Solution</a></h3>
+<h3><a href="http://tnbKristi.github.io/workshop/files/beg_js/wordguess_solution.js">See Solution</a></h3>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Cat Walk]]></title>
-    <link href="http://workshop.theresnobox.net/blog/2014/10/04/cat-walk/"/>
+    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/cat-walk/"/>
     <updated>2014-10-04T16:35:29-04:00</updated>
-    <id>http://workshop.theresnobox.net/blog/2014/10/04/cat-walk</id>
+    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/cat-walk</id>
     <content type="html"><![CDATA[<h1>Cat Walk</h1>
 
 <p>The goal of this exercise to make an awesome interactive animated cat.</p>
@@ -187,15 +187,15 @@ Once the number reaches 6 (a reasonable number of body parts for a hangman), inf
 </ul>
 
 
-<h3><a href="http://workshop.theresnobox.net/files/beg_js/catwalk_solution.js">See Solutions</a></h3>
+<h3><a href="http://tnbKristi.github.io/workshop/files/beg_js/catwalk_solution.js">See Solutions</a></h3>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Mad Libs]]></title>
-    <link href="http://workshop.theresnobox.net/blog/2014/10/04/mad-libs/"/>
+    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/mad-libs/"/>
     <updated>2014-10-04T16:29:44-04:00</updated>
-    <id>http://workshop.theresnobox.net/blog/2014/10/04/mad-libs</id>
+    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/mad-libs</id>
     <content type="html"><![CDATA[<p>The goal of this exercise is to make a Mad Libs generator.</p>
 
 <p>The second half of <a href="http://www.teaching-materials.org/javascript/slides/animevents.html">these slides</a> may be useful.</p>
@@ -247,15 +247,15 @@ Once the number reaches 6 (a reasonable number of body parts for a hangman), inf
 </ul>
 
 
-<h3><a href="http://workshop.theresnobox.net/files/beg_js/madlibs_solution.js">Show Solution</a></h3>
+<h3><a href="http://tnbKristi.github.io/workshop/files/beg_js/madlibs_solution.js">Show Solution</a></h3>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Calculator]]></title>
-    <link href="http://workshop.theresnobox.net/blog/2014/10/04/calculator/"/>
+    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/calculator/"/>
     <updated>2014-10-04T16:21:42-04:00</updated>
-    <id>http://workshop.theresnobox.net/blog/2014/10/04/calculator</id>
+    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/calculator</id>
     <content type="html"><![CDATA[<h2>The Calculator</h2>
 
 <p>You can use something like <a href="http://repl.it">repl.it</a> to code this so that you don&rsquo;t need to worry about making a webpage, or you can create a whole webpage for it, with inputs and buttons. You may want to start off with just JS and then add the UI later, but it&rsquo;s up to you.</p>
@@ -280,15 +280,15 @@ Once the number reaches 6 (a reasonable number of body parts for a hangman), inf
 </ul>
 
 
-<h3><a href="http://workshop.theresnobox.net/files/beg_js/calculator_solution.js">See Solution</a></h3>
+<h3><a href="http://tnbKristi.github.io/workshop/files/beg_js/calculator_solution.js">See Solution</a></h3>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Copycat Website]]></title>
-    <link href="http://workshop.theresnobox.net/blog/2014/10/04/copycat-website/"/>
+    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/copycat-website/"/>
     <updated>2014-10-04T16:16:45-04:00</updated>
-    <id>http://workshop.theresnobox.net/blog/2014/10/04/copycat-website</id>
+    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/copycat-website</id>
     <content type="html"><![CDATA[<h1>HTML Copycat Exercise</h1>
 
 <p>What&rsquo;s one of your favorite websites to visit? Imitation is the highest form of flattery, so why don&rsquo;t you try to imitate it?</p>
@@ -317,9 +317,9 @@ Once the number reaches 6 (a reasonable number of body parts for a hangman), inf
   
   <entry>
     <title type="html"><![CDATA[Event Invitation]]></title>
-    <link href="http://workshop.theresnobox.net/blog/2014/10/04/event-invitation/"/>
+    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/event-invitation/"/>
     <updated>2014-10-04T16:14:01-04:00</updated>
-    <id>http://workshop.theresnobox.net/blog/2014/10/04/event-invitation</id>
+    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/event-invitation</id>
     <content type="html"><![CDATA[<h1>HTML Event Invite Exercise</h1>
 
 <p>What&rsquo;s an upcoming event that you&rsquo;re organizing or that you&rsquo;re attending and want others to come to? Create a webpage for that event!</p>
@@ -338,21 +338,21 @@ Once the number reaches 6 (a reasonable number of body parts for a hangman), inf
   
   <entry>
     <title type="html"><![CDATA[Twitter Bootstrap Practice]]></title>
-    <link href="http://workshop.theresnobox.net/blog/2014/10/04/twitter-bootstrap-practice/"/>
+    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/twitter-bootstrap-practice/"/>
     <updated>2014-10-04T11:36:06-04:00</updated>
-    <id>http://workshop.theresnobox.net/blog/2014/10/04/twitter-bootstrap-practice</id>
+    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/twitter-bootstrap-practice</id>
     <content type="html"><![CDATA[<h1>CSS: Bootstrap Exercise</h1>
 
 <p>The goal of this exercise is to use the various elements of the Twitter Bootstrap framework to make a webpage.</p>
 
 <ul>
-<li>Start with <a href="http://workshop.theresnobox.net/files/html_css/bootstrap/bootstrap_before.html">this webpage</a>.</li>
+<li>Start with <a href="http://tnbKristi.github.io/workshop/files/html_css/bootstrap/bootstrap_before.html">this webpage</a>.</li>
 <li><p>Use the <a href="http://getbootstrap.com/css/#grid">Bootstrap grids classes</a> to create this webpage with a sidebar and main content:
-<img src="http://workshop.theresnobox.net/images/posts/html_css/bootstrap1.png"></p></li>
+<img src="http://tnbKristi.github.io/workshop/images/posts/html_css/bootstrap1.png"></p></li>
 <li><p>Use the <a href="http://getbootstrap.com/css/#type">Bootstrap base CSS classes</a> to add a quote, table, and search form to the page:
-<img src="http://workshop.theresnobox.net/images/posts/html_css/bootstrap2.png"></p></li>
+<img src="http://tnbKristi.github.io/workshop/images/posts/html_css/bootstrap2.png"></p></li>
 <li><p>Use the <a href="http://getbootstrap.com/components/#alerts">Bootstrap alert component</a> to add a danger alert. Use the <a href="http://getbootstrap.com/components/#thumbnails">thumbnails classes</a> to give the images borders.
-<img src="http://workshop.theresnobox.net/images/posts/html_css/bootstrap3.png"></p></li>
+<img src="http://tnbKristi.github.io/workshop/images/posts/html_css/bootstrap3.png"></p></li>
 </ul>
 
 
@@ -364,21 +364,21 @@ Once the number reaches 6 (a reasonable number of body parts for a hangman), inf
   
   <entry>
     <title type="html"><![CDATA[Media Queries]]></title>
-    <link href="http://workshop.theresnobox.net/blog/2014/10/04/media-queries/"/>
+    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/media-queries/"/>
     <updated>2014-10-04T11:28:00-04:00</updated>
-    <id>http://workshop.theresnobox.net/blog/2014/10/04/media-queries</id>
+    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/media-queries</id>
     <content type="html"><![CDATA[<h1>CSS: Media Queries Exercise</h1>
 
 <p>The goal of this exercise is to use CSS media queries to make a webpage appeardifferent for printing and for different window sizes.</p>
 
 <p>Start with <a href="http://www.teaching-materials.org/csstools/exercise_media_before.html">this webpage</a>, which already has HTML and CSS for a header, navigation, content, sidebar, and footer. This is what it looks like:
-<img src="http://workshop.theresnobox.net/images/posts/html_css/media_queries1.png"></p>
+<img src="http://tnbKristi.github.io/workshop/images/posts/html_css/media_queries1.png"></p>
 
 <h2>Print Media Queries</h2>
 
 <p>Add a CSS media query and appropriate styles so that the webpage looks like the screenshot below when printed.</p>
 
-<p><img src="http://workshop.theresnobox.net/images/posts/html_css/media_queries2.png"></p>
+<p><img src="http://tnbKristi.github.io/workshop/images/posts/html_css/media_queries2.png"></p>
 
 <h3>Specifically:</h3>
 
@@ -402,15 +402,15 @@ The sidebar should display under the main content.</em></p>
 
 <h3>Examples:</h3>
 
-<p><img src="http://workshop.theresnobox.net/images/posts/html_css/media_queries3.png"></p>
+<p><img src="http://tnbKristi.github.io/workshop/images/posts/html_css/media_queries3.png"></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[CSS Positioning]]></title>
-    <link href="http://workshop.theresnobox.net/blog/2014/10/04/css-positioning/"/>
+    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/css-positioning/"/>
     <updated>2014-10-04T11:23:29-04:00</updated>
-    <id>http://workshop.theresnobox.net/blog/2014/10/04/css-positioning</id>
+    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/css-positioning</id>
     <content type="html"><![CDATA[<h1>CSS Positioning</h1>
 
 <p>You may want to consult <a href="http://www.teaching-materials.org/htmlcss-1day/html-embeds/slides.html#slide1">these slides</a>.</p>
@@ -420,10 +420,10 @@ The sidebar should display under the main content.</em></p>
 <p>Use Google Images search to find clipart like the images in the example.</p>
 
 <p>Here&rsquo;s what it looks like with a window width of 800x530:
-<img src="http://workshop.theresnobox.net/images/posts/html_css/farmparty1.png"></p>
+<img src="http://tnbKristi.github.io/workshop/images/posts/html_css/farmparty1.png"></p>
 
 <p>Here&rsquo;s what it looks like when the window is 400x475 - notice how elements resize:
-<img src="http://workshop.theresnobox.net/images/posts/html_css/farmparty2.png"></p>
+<img src="http://tnbKristi.github.io/workshop/images/posts/html_css/farmparty2.png"></p>
 
 <h2>Here are recommended steps for making this happen:</h2>
 
@@ -442,9 +442,9 @@ The sidebar should display under the main content.</em></p>
   
   <entry>
     <title type="html"><![CDATA[Embedding HTML]]></title>
-    <link href="http://workshop.theresnobox.net/blog/2014/10/04/embedding-html/"/>
+    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/embedding-html/"/>
     <updated>2014-10-04T10:59:53-04:00</updated>
-    <id>http://workshop.theresnobox.net/blog/2014/10/04/embedding-html</id>
+    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/embedding-html</id>
     <content type="html"><![CDATA[<h1>HTML Embed Exercise</h1>
 
 <p>In this exercise, you&rsquo;ll create a webpage of many embedded elements. For some of these, you may have to google to figure out how to get embed codes - some sites make it easier/more obvious than others.</p>
@@ -463,16 +463,16 @@ The sidebar should display under the main content.</em></p>
 </ol>
 
 
-<p><img src="http://workshop.theresnobox.net/images/posts/html_css/embed_html1.png">
+<p><img src="http://tnbKristi.github.io/workshop/images/posts/html_css/embed_html1.png">
 <em>An example of the Network Tab in Chrome Developer Tools.</em></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[HTML Basics]]></title>
-    <link href="http://workshop.theresnobox.net/blog/2014/09/22/html-basics/"/>
+    <link href="http://tnbKristi.github.io/workshop/blog/2014/09/22/html-basics/"/>
     <updated>2014-09-22T16:39:16-04:00</updated>
-    <id>http://workshop.theresnobox.net/blog/2014/09/22/html-basics</id>
+    <id>http://tnbKristi.github.io/workshop/blog/2014/09/22/html-basics</id>
     <content type="html"><![CDATA[<h1>Part 1: HTML Basics Exercise</h1>
 
 <h2>Steps</h2>
@@ -484,7 +484,7 @@ The sidebar should display under the main content.</em></p>
 </ul>
 
 
-<p><img src="http://workshop.theresnobox.net/images/posts/html_css/basics_screen1.png" alt="Part 1 Example" /></p>
+<p><img src="http://tnbKristi.github.io/workshop/images/posts/html_css/basics_screen1.png" alt="Part 1 Example" /></p>
 
 <h1>Part 2: HTML Tables Exercise</h1>
 
@@ -497,7 +497,7 @@ The sidebar should display under the main content.</em></p>
 </ul>
 
 
-<p><img src="http://workshop.theresnobox.net/images/posts/html_css/basics_screen2.png" alt="Part 2 Example" /></p>
+<p><img src="http://tnbKristi.github.io/workshop/images/posts/html_css/basics_screen2.png" alt="Part 2 Example" /></p>
 
 <h1>Part 3: HTML Forms Exercise</h1>
 
@@ -511,7 +511,7 @@ The sidebar should display under the main content.</em></p>
 </ul>
 
 
-<p><img src="http://workshop.theresnobox.net/images/posts/html_css/basics_screen3.png" alt="Part 3 Example" /></p>
+<p><img src="http://tnbKristi.github.io/workshop/images/posts/html_css/basics_screen3.png" alt="Part 3 Example" /></p>
 
 <p>All done? (Or close enough?) Share what you made with everyone!</p>
 ]]></content>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Advanced Js | Programming Workshop]]></title>
-  <link href="http://tnbKristi.github.io/workshop/blog/categories/advanced-js/atom.xml" rel="self"/>
-  <link href="http://tnbKristi.github.io/workshop/"/>
-  <updated>2014-10-05T08:16:56-04:00</updated>
-  <id>http://tnbKristi.github.io/workshop/</id>
+  <link href="http://workshop.theresnobox.net/blog/categories/advanced-js/atom.xml" rel="self"/>
+  <link href="http://workshop.theresnobox.net/"/>
+  <updated>2014-10-05T08:21:18-04:00</updated>
+  <id>http://workshop.theresnobox.net/</id>
   <author>
     <name><![CDATA[Kristi Centinaro]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Memory Game]]></title>
-    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/memory-game/"/>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/memory-game/"/>
     <updated>2014-10-04T16:44:32-04:00</updated>
-    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/memory-game</id>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/memory-game</id>
     <content type="html"><![CDATA[<h1>The Memory Game</h1>
 
 <p>In this exercise, you&rsquo;ll make a LOLCat memory game &ndash; you can see a screenshot of a sample solution on the right. A memory game consists of an even number of tiles with images on one side and a generic back. Each image appears on precisely two tiles. You start the game with all tiles turned face down, and proceed to flip over two tiles at a time. If the two tiles have the same image, they remain face up. If not, they&rsquo;re flipped face down again after a short delay. The goal of the game is to get all the tiles flipped face up (i.e., find all the matching image pairs) in the least number of tries.</p>

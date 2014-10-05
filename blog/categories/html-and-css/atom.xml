@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Html & Css | Programming Workshop]]></title>
-  <link href="http://tnbKristi.github.io/workshop/blog/categories/html-and-css/atom.xml" rel="self"/>
-  <link href="http://tnbKristi.github.io/workshop/"/>
-  <updated>2014-10-05T08:16:56-04:00</updated>
-  <id>http://tnbKristi.github.io/workshop/</id>
+  <link href="http://workshop.theresnobox.net/blog/categories/html-and-css/atom.xml" rel="self"/>
+  <link href="http://workshop.theresnobox.net/"/>
+  <updated>2014-10-05T08:21:18-04:00</updated>
+  <id>http://workshop.theresnobox.net/</id>
   <author>
     <name><![CDATA[Kristi Centinaro]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Copycat Website]]></title>
-    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/copycat-website/"/>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/copycat-website/"/>
     <updated>2014-10-04T16:16:45-04:00</updated>
-    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/copycat-website</id>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/copycat-website</id>
     <content type="html"><![CDATA[<h1>HTML Copycat Exercise</h1>
 
 <p>What&rsquo;s one of your favorite websites to visit? Imitation is the highest form of flattery, so why don&rsquo;t you try to imitate it?</p>
@@ -46,9 +46,9 @@
   
   <entry>
     <title type="html"><![CDATA[Event Invitation]]></title>
-    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/event-invitation/"/>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/event-invitation/"/>
     <updated>2014-10-04T16:14:01-04:00</updated>
-    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/event-invitation</id>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/event-invitation</id>
     <content type="html"><![CDATA[<h1>HTML Event Invite Exercise</h1>
 
 <p>What&rsquo;s an upcoming event that you&rsquo;re organizing or that you&rsquo;re attending and want others to come to? Create a webpage for that event!</p>
@@ -67,9 +67,9 @@
   
   <entry>
     <title type="html"><![CDATA[Twitter Bootstrap Practice]]></title>
-    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/twitter-bootstrap-practice/"/>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/twitter-bootstrap-practice/"/>
     <updated>2014-10-04T11:36:06-04:00</updated>
-    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/twitter-bootstrap-practice</id>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/twitter-bootstrap-practice</id>
     <content type="html"><![CDATA[<h1>CSS: Bootstrap Exercise</h1>
 
 <p>The goal of this exercise is to use the various elements of the Twitter Bootstrap framework to make a webpage.</p>
@@ -93,9 +93,9 @@
   
   <entry>
     <title type="html"><![CDATA[CSS Positioning]]></title>
-    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/css-positioning/"/>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/css-positioning/"/>
     <updated>2014-10-04T11:23:29-04:00</updated>
-    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/css-positioning</id>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/css-positioning</id>
     <content type="html"><![CDATA[<h1>CSS Positioning</h1>
 
 <p>You may want to consult <a href="http://www.teaching-materials.org/htmlcss-1day/html-embeds/slides.html#slide1">these slides</a>.</p>
@@ -127,9 +127,9 @@
   
   <entry>
     <title type="html"><![CDATA[Embedding HTML]]></title>
-    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/embedding-html/"/>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/embedding-html/"/>
     <updated>2014-10-04T10:59:53-04:00</updated>
-    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/embedding-html</id>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/embedding-html</id>
     <content type="html"><![CDATA[<h1>HTML Embed Exercise</h1>
 
 <p>In this exercise, you&rsquo;ll create a webpage of many embedded elements. For some of these, you may have to google to figure out how to get embed codes - some sites make it easier/more obvious than others.</p>

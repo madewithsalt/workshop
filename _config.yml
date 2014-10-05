@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://tnbKristi.github.io/workshop
+url: http://workshop.theresnobox.net
 title: Programming Workshop
 subtitle: "Bite-sized HTML, CSS, and JavaScript exercises."
 author: Kristi Centinaro
@@ -42,7 +42,7 @@ levels:
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: /workshop
+root: /
 permalink: /blog/:year/:month/:day/:title/
 source: source
 destination: public

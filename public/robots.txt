@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://tnbKristi.github.io/workshop/sitemap.xml 
+Sitemap: http://workshop.theresnobox.net/sitemap.xml 

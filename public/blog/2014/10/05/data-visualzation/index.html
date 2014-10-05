@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Calculator - Programming Workshop</title>
+  <title>Data Visualization - Programming Workshop</title>
   <meta name="author" content="Kristi Centinaro">
 
   
-  <meta name="description" content="The Calculator You can use something like repl.it to code this so that you don&rsquo;t need to worry about making a webpage, or you can create a &hellip;">
+  <meta name="description" content="The point of this exercise is to learn to read, manipulate, and visualize data in JavaScript. Find an interesting dataset in some sort of text format &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://workshop.theresnobox.net/blog/2014/10/04/calculator">
+  <link rel="canonical" href="http://workshop.theresnobox.net/blog/2014/10/05/data-visualzation">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Programming Workshop" type="application/atom+xml">
@@ -121,7 +121,7 @@
   
   <header>
     
-      <h1 class="entry-title">Calculator</h1>
+      <h1 class="entry-title">Data Visualization</h1>
     
     
       <p class="meta">
@@ -130,38 +130,35 @@
 
 
 
-<time class='entry-date' datetime='2014-10-04T16:21:42-04:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>4</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>4:21 pm</span></time>
+<time class='entry-date' datetime='2014-10-05T08:23:35-04:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>8:23 am</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><h2>The Calculator</h2>
-
-<p>You can use something like <a href="http://repl.it">repl.it</a> to code this so that you don&rsquo;t need to worry about making a webpage, or you can create a whole webpage for it, with inputs and buttons. You may want to start off with just JS and then add the UI later, but it&rsquo;s up to you.</p>
-
-<p>You may find <a href="http://www.teaching-materials.org/javascript/slides/varsfunctions.html">these slides</a> useful.</p>
+<div class="entry-content"><p>The point of this exercise is to learn to read, manipulate, and visualize data in JavaScript.</p>
 
 <ul>
-<li>Write a function called <code>squareNumber</code> that will take one argument (a number), square that number, and return the result. It should also log a string like <code>"The result of squaring the number 3 is 9."</code></li>
-<li>Write a function called <code>halfNumber</code> that will take one argument (a number), divide it by 2, and return the result. It should also log a string like <code>"Half of 5 is 2.5."</code></li>
-<li>Write a function called <code>percentOf</code> that will take two numbers, figure out what percent the first number represents of the second number, and return the result. It should also log a string like &ldquo;2 is 50% of 4.&rdquo;</li>
-<li>Write a function called <code>areaOfCircle</code> that will take one argument (the radius), calculate the area based on that, and return the result. It should also log a string like <code>"The area for a circle with radius 2 is 12.566370614359172"</code></li>
-<li><strong>Bonus:</strong> Round the result so there are only two digits after the decimal.</li>
-<li>Write a function that will take one argument (a number) and perform the following operations, using the functions you wrote earlier:
+<li>Find an interesting dataset in some sort of text format (XML, JSON, CSV, etc).</li>
+<li>Store the dataset in your project folder.</li>
+<li>Truncate it to a reasonable length if it’s very long (i.e. 1000 rows). Some possible sources are:
 
 <ul>
-<li>Take half of the number and store the result.</li>
-<li>Square the result of #1 and store that result.</li>
-<li>Calculate the area of a circle with the result of #2 as the radius.</li>
-<li>Calculate what percentage that area is of the squared result (#3).</li>
+<li><a href="http://explore.data.gov">explore.data.gov</a></li>
+<li><a href="http://usgovxml.com">usgovxml.com</a></li>
+<li><a href="http://geocommons.com">geocommons.com</a></li>
 </ul>
 </li>
+<li>Create an empty webpage and load the dataset into your webpage using an AJAX or JSONP request. (See slides: <a href="http://www.teaching-materials.org/ajax/">AJAX/JSONP</a>)</li>
+<li>Display the data as a <code>table</code> with columns for each of the attributes. (See slides: <a href="http://www.teaching-materials.org/htmlcss-1day/lesson3/slides.html#slide3">HTML Tables</a>)</li>
+<li>Use the <a href="http://tablesorter.com/docs/">tablesorter</a> jQuery plugin to make the table sortable. (See slides: <a href="http://www.teaching-materials.org/jquery/">jQuery</a>)</li>
+<li>Create a <code>form</code> above the <code>table</code> which lets users filter or manipulate the data somehow, i.e. a dropdown box to only show rows matching a particular query, or a way of summing up attributes. Whatever would be useful with the data. (See slides: <a href="http://www.teaching-materials.org/javascript/slides/objectsdom.html">DOM</a>, <a href="http://www.teaching-materials.org/javascript/slides/animevents.html">Events</a>)</li>
+<li>Use the <a href="http://www.highcharts.com/">High Charts JS library</a> to visualize a numerical aspect of the data. Or find <a href="http://selection.datavisualization.ch/">a different library here</a>.</li>
+<li>If the data has a geographical aspect (locations), use the <a href="https://developers.google.com/maps/">Google Maps API</a> to plot it on a map. (See slides: <a href="http://gdisf-js-apis.appspot.com/">JS APIs</a>)</li>
+<li>Use <a href="getbootstrap.com">Twitter Bootstrap</a> on the site to make it prettier, styling the buttons and table.</li>
 </ul>
 
-
-<h3><a href="/files/beg_js/calculator_solution.js">See Solution</a></h3>
 </div>
 
 
@@ -177,12 +174,12 @@
 
 
 
-<time class='entry-date' datetime='2014-10-04T16:21:42-04:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>4</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>4:21 pm</span></time>
+<time class='entry-date' datetime='2014-10-05T08:23:35-04:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>8:23 am</span></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/beginner-js/'>beginner js</a>
+    <a class='category' href='/blog/categories/advanced-js/'>advanced js</a>
   
 </span>
 
@@ -191,7 +188,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://workshop.theresnobox.net/blog/2014/10/04/calculator/" data-via="@thersnobox" data-counturl="http://workshop.theresnobox.net/blog/2014/10/04/calculator/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://workshop.theresnobox.net/blog/2014/10/05/data-visualzation/" data-via="@thersnobox" data-counturl="http://workshop.theresnobox.net/blog/2014/10/05/data-visualzation/" >Tweet</a>
   
   
   
@@ -200,10 +197,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/10/04/copycat-website/" title="Previous Post: Copycat Website">&laquo; Copycat Website</a>
+        <a class="basic-alignment left" href="/blog/2014/10/04/memory-game/" title="Previous Post: Memory Game">&laquo; Memory Game</a>
       
       
-        <a class="basic-alignment right" href="/blog/2014/10/04/mad-libs/" title="Next Post: Mad Libs">Mad Libs &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2014/10/05/youtube-player/" title="Next Post: YouTube Player">YouTube Player &raquo;</a>
       
     </p>
   </footer>

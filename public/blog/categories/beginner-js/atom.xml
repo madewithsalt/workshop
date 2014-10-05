@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Beginner Js | Programming Workshop]]></title>
-  <link href="http://tnbKristi.github.io/workshop/blog/categories/beginner-js/atom.xml" rel="self"/>
-  <link href="http://tnbKristi.github.io/workshop/"/>
-  <updated>2014-10-05T08:16:56-04:00</updated>
-  <id>http://tnbKristi.github.io/workshop/</id>
+  <link href="http://workshop.theresnobox.net/blog/categories/beginner-js/atom.xml" rel="self"/>
+  <link href="http://workshop.theresnobox.net/"/>
+  <updated>2014-10-05T08:41:08-04:00</updated>
+  <id>http://workshop.theresnobox.net/</id>
   <author>
     <name><![CDATA[Kristi Centinaro]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Word Guesser]]></title>
-    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/word-guesser/"/>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/word-guesser/"/>
     <updated>2014-10-04T16:39:20-04:00</updated>
-    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/word-guesser</id>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/word-guesser</id>
     <content type="html"><![CDATA[<h1>The Word Guesser</h1>
 
 <p>You&rsquo;ll create a simple word guessing game where the user gets infinite tries to guess the word (like Hangman without the hangman, or like Wheel of Fortune without the wheel and fortune).</p>
@@ -54,9 +54,9 @@ Once the number reaches 6 (a reasonable number of body parts for a hangman), inf
   
   <entry>
     <title type="html"><![CDATA[Cat Walk]]></title>
-    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/cat-walk/"/>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/cat-walk/"/>
     <updated>2014-10-04T16:35:29-04:00</updated>
-    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/cat-walk</id>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/cat-walk</id>
     <content type="html"><![CDATA[<h1>Cat Walk</h1>
 
 <p>The goal of this exercise to make an awesome interactive animated cat.</p>
@@ -150,9 +150,9 @@ Once the number reaches 6 (a reasonable number of body parts for a hangman), inf
   
   <entry>
     <title type="html"><![CDATA[Mad Libs]]></title>
-    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/mad-libs/"/>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/mad-libs/"/>
     <updated>2014-10-04T16:29:44-04:00</updated>
-    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/mad-libs</id>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/mad-libs</id>
     <content type="html"><![CDATA[<p>The goal of this exercise is to make a Mad Libs generator.</p>
 
 <p>The second half of <a href="http://www.teaching-materials.org/javascript/slides/animevents.html">these slides</a> may be useful.</p>
@@ -206,9 +206,9 @@ Once the number reaches 6 (a reasonable number of body parts for a hangman), inf
   
   <entry>
     <title type="html"><![CDATA[Calculator]]></title>
-    <link href="http://tnbKristi.github.io/workshop/blog/2014/10/04/calculator/"/>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/04/calculator/"/>
     <updated>2014-10-04T16:21:42-04:00</updated>
-    <id>http://tnbKristi.github.io/workshop/blog/2014/10/04/calculator</id>
+    <id>http://workshop.theresnobox.net/blog/2014/10/04/calculator</id>
     <content type="html"><![CDATA[<h2>The Calculator</h2>
 
 <p>You can use something like <a href="http://repl.it">repl.it</a> to code this so that you don&rsquo;t need to worry about making a webpage, or you can create a whole webpage for it, with inputs and buttons. You may want to start off with just JS and then add the UI later, but it&rsquo;s up to you.</p>

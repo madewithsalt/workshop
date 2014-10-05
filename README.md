@@ -22,7 +22,7 @@ rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
 bundle install
 ```
 
-- Then, create a new post: `rake new_post["My Post Name"]
+- Then, create a new post: `rake new_post["My Post Name"]`
 
 Check out the docs on Octopress to see what options you have in the post.
 

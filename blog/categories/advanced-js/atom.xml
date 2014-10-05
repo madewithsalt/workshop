@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Advanced Js | Programming Workshop]]></title>
   <link href="http://workshop.theresnobox.net/blog/categories/advanced-js/atom.xml" rel="self"/>
   <link href="http://workshop.theresnobox.net/"/>
-  <updated>2014-10-05T08:21:18-04:00</updated>
+  <updated>2014-10-05T08:41:30-04:00</updated>
   <id>http://workshop.theresnobox.net/</id>
   <author>
     <name><![CDATA[Kristi Centinaro]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[YouTube Player]]></title>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/05/youtube-player/"/>
+    <updated>2014-10-05T08:32:21-04:00</updated>
+    <id>http://workshop.theresnobox.net/blog/2014/10/05/youtube-player</id>
+    <content type="html"><![CDATA[<p>In this exercise, you&rsquo;ll try to bring in Youtube video information using their JSON API. You may find <a href="http://gdisf-js-apis.appspot.com/">these slides</a> useful.</p>
+
+<p>Start with <a href="http://www.teaching-materials.org/ajax/jsapis_solution.html">this file</a>.</p>
+
+<ul>
+<li>Go to the <a href="https://developers.google.com/youtube/2.0/developers_guide_jsonc">Youtube API docs</a> and read through them. Look at the sample output and the example URLs for the API. Find a URL that will give you search results, and test that out in the browser.</li>
+<li>The webpage currently brings in video information using the jQuery <code>$.ajax</code> function to bring in a local <code>videos.json</code> file into the page.</li>
+<li>Change that function so that it instead brings in the results of a Youtube API search from the Youtube servers and displays those results instead. Search for whatever you fancy, but limit the search to 5 results.</li>
+<li><strong>Tips:</strong> Remember that the JSON that the Youtube API returns will be different than the JSON format of <code>videos.json</code>. You should <code>console.log</code> inside your callback to see what the data looks like and make sure you&rsquo;re using it correctly. In particular, check how they store the <code>ID</code>, the <code>author</code>, and the <code>rating</code>.</li>
+<li><strong>Bonus:</strong> Create your own playlist on Youtube of your favorite videos, and bring that into the page instead.</li>
+<li><strong>Bonus:</strong> Add a search button to the page so that people can search for any query.</li>
+</ul>
+
+
+<p>Make sure that you use your browser developer tools to make debugging easier while working on this. Check for errors, and use <code>console.log()</code> to figure out how far your code makes it, and what the values of your variables are along the way.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Data Visualization]]></title>
+    <link href="http://workshop.theresnobox.net/blog/2014/10/05/data-visualzation/"/>
+    <updated>2014-10-05T08:23:35-04:00</updated>
+    <id>http://workshop.theresnobox.net/blog/2014/10/05/data-visualzation</id>
+    <content type="html"><![CDATA[<p>The point of this exercise is to learn to read, manipulate, and visualize data in JavaScript.</p>
+
+<ul>
+<li>Find an interesting dataset in some sort of text format (XML, JSON, CSV, etc).</li>
+<li>Store the dataset in your project folder.</li>
+<li>Truncate it to a reasonable length if it’s very long (i.e. 1000 rows). Some possible sources are:
+
+<ul>
+<li><a href="http://explore.data.gov">explore.data.gov</a></li>
+<li><a href="http://usgovxml.com">usgovxml.com</a></li>
+<li><a href="http://geocommons.com">geocommons.com</a></li>
+</ul>
+</li>
+<li>Create an empty webpage and load the dataset into your webpage using an AJAX or JSONP request. (See slides: <a href="http://www.teaching-materials.org/ajax/">AJAX/JSONP</a>)</li>
+<li>Display the data as a <code>table</code> with columns for each of the attributes. (See slides: <a href="http://www.teaching-materials.org/htmlcss-1day/lesson3/slides.html#slide3">HTML Tables</a>)</li>
+<li>Use the <a href="http://tablesorter.com/docs/">tablesorter</a> jQuery plugin to make the table sortable. (See slides: <a href="http://www.teaching-materials.org/jquery/">jQuery</a>)</li>
+<li>Create a <code>form</code> above the <code>table</code> which lets users filter or manipulate the data somehow, i.e. a dropdown box to only show rows matching a particular query, or a way of summing up attributes. Whatever would be useful with the data. (See slides: <a href="http://www.teaching-materials.org/javascript/slides/objectsdom.html">DOM</a>, <a href="http://www.teaching-materials.org/javascript/slides/animevents.html">Events</a>)</li>
+<li>Use the <a href="http://www.highcharts.com/">High Charts JS library</a> to visualize a numerical aspect of the data. Or find <a href="http://selection.datavisualization.ch/">a different library here</a>.</li>
+<li>If the data has a geographical aspect (locations), use the <a href="https://developers.google.com/maps/">Google Maps API</a> to plot it on a map. (See slides: <a href="http://gdisf-js-apis.appspot.com/">JS APIs</a>)</li>
+<li>Use <a href="getbootstrap.com">Twitter Bootstrap</a> on the site to make it prettier, styling the buttons and table.</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Memory Game]]></title>
